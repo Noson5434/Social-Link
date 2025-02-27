@@ -1,0 +1,128 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+html {
+   box-sizing: border-box;
+   font-family: 'Inter', serif;
+}
+
+body {
+   background-color: hsl(0, 0%, 8%);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+}
+
+.profile-picture {
+   width: 80px;
+   height: 80px;
+   border-radius: 50%;
+   margin: 16px auto;
+   display: block;
+}
+
+.profile-name {
+   color: white;
+   font-size: 25px;
+   font-weight: 400;
+   margin-bottom: 12px;
+}
+
+.profile-location {
+   color: hsl(75, 94%, 57%);
+   font-size: 14px;
+   font-weight: 400;
+   margin-bottom: 30px;
+}
+
+.profile-bio {
+   color: white;
+   font-size: 13px;
+   font-weight: 400;
+   margin-bottom: 8px;
+}
+
+.social-links-panel {
+   background-color: hsl(0, 0%, 12%);
+   border-radius: 10px;
+   padding: 15px 25px;
+   width: 320px;
+   max-width: 1440px;
+   height: 555px;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+}
+
+.social-links {
+   padding: 10px 15px;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   gap: 7px;
+}
+
+.social-link {
+   background-color: hsl(0, 0%, 20%);
+   color: white;
+   font-size: 16px;
+   font-weight: 400;
+   padding: 14px;
+   text-decoration: none;
+   margin: 5px 0;
+   border-radius: 7px;
+   display: block;
+   width: 100%;
+   max-width: 280px;
+   align-self: center;
+   text-align: center;
+   transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.social-link:hover {
+   background-color: hsl(0, 0%, 30%);
+   transform: scale(1.05); 
+}
